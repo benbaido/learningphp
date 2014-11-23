@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Your own do-while</title>
+        <link type='text/css' rel='stylesheet' href='style.css'/>
+	</head>
+	<body>
+    <?php
+        //write your do-while loop below
+        $loves = "no one";
+        $flipcount = 0;
+        
+        do{
+            $flipcount++;
+            echo $flipcount;
+            $ranflip = rand(1,10000);
+            $loves = ((($ranflip % 2) == 0) ? "Phun" : "Earn");
+        }while ($loves != "Earn");
+        
+        $tries = (($flipcount == 1) ? "try" : "tries");
+        
+        echo "<p>It took " . $flipcount . " " . $tries . " for Noh to like " . $loves . ".</p>";
+    ?>
+    </body>
+</html>
