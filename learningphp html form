@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>Information Gathered</title>
+</head>
+
+<body>
+	<?php
+	
+		//echo "<p>Data Process</p>";
+		
+		/*date_default_timezone_set('UTC');
+		echo date('h:i:s:u am l F jS Y e');*/
+		
+		$usersName = $_POST['username'];
+		$streetAddress = $_POST['streetAddress'];
+		$cityAddress = $_POST['cityAddress'];
+		
+		echo $usersName . "<br/>";
+		echo $streetAddress . "<br/>";
+		echo $cityAddress . "<br/>";
+		
+		switch($usersName)
+		{
+			case "Mena" :
+				echo "Hi Mena";
+				break;
+			case "Sally" :
+				echo "what the fuck Sally";
+				break;
+			case "Stiles" :
+				echo "They really should have made you a mage or something Stiles";
+				break;
+		}
+		
+		/*
+		$num = 0;
+		while($num < 20)
+		{
+			echo ++$num . ', ';
+		}
+		
+		for($num_two = 21; $num_two <= 40; $num_two++)
+		{
+			echo $num_two;
+			
+			if($num_two != 40)
+			{ echo ', ';}
+			else 
+			{ break;}
+		}
+		*/
+		
+		$loveSick = array('Noh', 'Phun', 'Om', 'Earn', 'Keng', 'Aim', 'Yuri', 'Mo', 'Golf');
+		echo 'Noh\'s boy' . $loveSick[1] . '\r ';
+		foreach($loveSick as $cast) {
+			echo $cast . ' ';
+		}
+		
+	?>
+
+</body>
+</html>
